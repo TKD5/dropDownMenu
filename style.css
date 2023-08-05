@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/charles-forerunner-3fPXt37X6UQ-unsplash.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    }
+
+.menu_bar {
+    background-color: gray;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.menu_bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu_bar ul li {
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.menu_bar ul li a {
+   text-decoration: none;
+   color: white;
+}
+
+.active, .menu_bar ul li:hover {
+    background-color: rgb(75, 81, 87);
+    border-radius: 3px;
+}
+
+
+.sub_menu_1 {
+    display: none;
+}
+
+.menu_bar ul li:hover .sub_menu_1 {
+    display: block;
+    position: absolute;
+    background-color: gray;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu_bar ul li:hover .sub_menu_1 ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu_bar ul li:hover .sub_menu_1 ul li {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu_bar ul li:hover .sub_menu_1 ul li:last-child {
+    border-bottom: none;
+}
